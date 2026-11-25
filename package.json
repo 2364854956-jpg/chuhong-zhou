@@ -1,0 +1,25 @@
+{
+  "name": "chuhong-zhou-portfolio",
+  "private": true,
+  "scripts": {
+    "build:macbook": "tailwindcss -i ./src/macbook-island/index.css -o ./assets/vendor/macbook-island.css --minify && esbuild ./src/macbook-island/main.tsx --bundle --minify --format=iife --platform=browser --target=es2020 --outfile=./assets/vendor/macbook-island.js --define:process.env.NODE_ENV=\\\"production\\\"",
+    "check:assets": "node ./scripts/check-assets.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "latest",
+    "clsx": "latest",
+    "motion": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwind-merge": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "esbuild": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}

@@ -1,0 +1,2546 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="周楚红的 UI/UX 设计作品集：微软 SICO.ai 与 Copilot Labs、暖聊、好未来与作业帮。"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23fdfdfb' stroke='%23131313'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23131313'/%3E%3Cpath d='M32 3v21M32 40v21M3 32h21M40 32h21' stroke='%23131313'/%3E%3C/svg%3E"
+    />
+    <title>Chuhong Zhou — Product Designer</title>
+    <link rel="stylesheet" href="./css/styles.css?v=20261120-feedback-deck-layout-2" />
+    <link rel="stylesheet" href="./css/ziaoh-theme.css?v=20261125-mobile-header-controls-103" />
+    <script src="./assets/vendor/three.min.js" defer></script>
+    <script src="./assets/vendor/earth-texture.js" defer></script>
+    <script src="./js/script.js?v=20261125-mobile-header-controls-103" defer></script>
+    <script src="./assets/vendor/macbook-island.js?v=20261124-macbook-white-55" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to work</a>
+
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Chuhong Zhou home">
+        <span class="logo-word">chuhong.zhou</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="main-navigation" aria-label="Main navigation">
+        <a class="is-active" href="#work" data-view="work" aria-current="page">Work</a>
+        <a href="#lounge" data-view="lounge">Lounge</a>
+        <a href="#about" data-view="about">About</a>
+      </nav>
+
+      <div class="vibe-wrap">
+        <audio
+          id="vibe-audio"
+          src="./assets/audio/jeff-li-cuckoo-waltz.mp3"
+          preload="metadata"
+          loop
+          hidden
+        ></audio>
+        <button
+          class="vibe-button"
+          type="button"
+          aria-label="Play 杜鹃圆舞曲 by Jeff李"
+          aria-pressed="false"
+        >
+          <span class="vibe-orbit" aria-hidden="true"></span>
+          <span class="vibe-core" aria-hidden="true"></span>
+          <span class="vibe-tooltip" aria-hidden="true">Play 杜鹃圆舞曲</span>
+        </button>
+        <span class="now-playing" aria-live="polite">
+          <i aria-hidden="true"></i>
+          <span>杜鹃圆舞曲 — Jeff李</span>
+        </span>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="intro" data-work-view aria-labelledby="intro-title">
+        <h1 id="intro-title">
+          Product designer creating clear, considered experiences.
+          <span>I bring together systems thinking, visual craft, and a little warmth.</span>
+        </h1>
+        <p class="intro-role">
+          Senior UI Designer @ Microsoft
+        </p>
+      </section>
+
+      <section class="tracks" id="work" data-work-view aria-labelledby="tracks-title">
+        <div class="tracks-heading">
+          <h2 id="tracks-title">Curated Tracks<sup>06</sup></h2>
+
+          <div class="view-controls">
+            <div class="mode-switch" role="group" aria-label="Gallery display mode">
+              <button class="mode-button is-active" type="button" data-mode="focus">
+                Focus Mode
+              </button>
+              <button class="mode-button" type="button" data-mode="soundroom">
+                Soundroom Mode
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="track-grid">
+          <button
+            class="track-card"
+            type="button"
+            data-case="sico"
+            aria-haspopup="dialog"
+            aria-label="Open SICO.ai case study"
+          >
+            <span class="jewel-case">
+              <span class="jewel-hinge" aria-hidden="true"></span>
+              <span class="case-art">
+                <img
+                  src="./assets/covers/sico.png"
+                  alt="SICO.ai human-AI collaboration platform"
+                  width="1395"
+                  height="1395"
+                />
+              </span>
+              <span class="quick-view">Quick view ↗</span>
+            </span>
+            <span class="track-copy">
+              <span class="track-title">
+                <strong>Microsoft / SICO</strong>
+                <small>Microsoft · 2025</small>
+              </span>
+              <span class="track-tags">
+                <span>AI Product</span>
+                <span>Visual System</span>
+              </span>
+            </span>
+          </button>
+
+          <button
+            class="track-card"
+            type="button"
+            data-case="copilot"
+            aria-haspopup="dialog"
+            aria-label="Open Copilot Labs case study"
+          >
+            <span class="jewel-case">
+              <span class="jewel-hinge" aria-hidden="true"></span>
+              <span class="case-art">
+                <img
+                  src="./assets/covers/copilot-labs.png"
+                  alt="Copilot Labs experimental AI platform"
+                  width="1395"
+                  height="1395"
+                />
+              </span>
+              <span class="quick-view">Quick view ↗</span>
+            </span>
+            <span class="track-copy">
+              <span class="track-title">
+                <strong>Microsoft / Copilot</strong>
+                <small>Microsoft · 2025</small>
+              </span>
+              <span class="track-tags">
+                <span>AI Lab</span>
+                <span>Web Experience</span>
+              </span>
+            </span>
+          </button>
+
+          <button
+            class="track-card"
+            type="button"
+            data-case="xiaohongshu"
+            aria-haspopup="dialog"
+            aria-label="Open Xiaohongshu case study"
+          >
+            <span class="jewel-case">
+              <span class="jewel-hinge" aria-hidden="true"></span>
+              <span class="case-art">
+                <img
+                  src="./assets/covers/xiaohongshu.png"
+                  alt="Xiaohongshu social content visual design"
+                  width="1395"
+                  height="1395"
+                />
+              </span>
+              <span class="quick-view">Quick view ↗</span>
+            </span>
+            <span class="track-copy">
+              <span class="track-title">
+                <strong>小红书 · Xiaohongshu</strong>
+                <small>Social Platform · 2024</small>
+              </span>
+              <span class="track-tags">
+                <span>Social Content</span>
+                <span>Art Direction</span>
+              </span>
+            </span>
+          </button>
+
+          <button
+            class="track-card"
+            type="button"
+            data-case="warmchat"
+            aria-haspopup="dialog"
+            aria-label="Open WarmChat case study"
+          >
+            <span class="jewel-case">
+              <span class="jewel-hinge" aria-hidden="true"></span>
+              <span class="case-art">
+                <img
+                  src="./assets/covers/warmchat.png"
+                  alt="WarmChat Mid-Autumn Festival campaign"
+                  width="1395"
+                  height="1395"
+                />
+              </span>
+              <span class="quick-view">Quick view ↗</span>
+            </span>
+            <span class="track-copy">
+              <span class="track-title">
+                <strong>暖聊 · WarmChat</strong>
+                <small>Social Product · 2023</small>
+              </span>
+              <span class="track-tags">
+                <span>Campaign UI</span>
+                <span>Interaction</span>
+              </span>
+            </span>
+          </button>
+
+          <button
+            class="track-card"
+            type="button"
+            data-case="future"
+            aria-haspopup="dialog"
+            aria-label="Open TAL Education case study"
+          >
+            <span class="jewel-case">
+              <span class="jewel-hinge" aria-hidden="true"></span>
+              <span class="case-art">
+                <img
+                  src="./assets/covers/tal-education.png"
+                  alt="TAL Education AI illustration and character design"
+                  width="1395"
+                  height="1395"
+                  loading="lazy"
+                />
+              </span>
+              <span class="quick-view">Quick view ↗</span>
+            </span>
+            <span class="track-copy">
+              <span class="track-title">
+                <strong>好未来 · TAL</strong>
+                <small>EdTech · 2024</small>
+              </span>
+              <span class="track-tags">
+                <span>Character IP</span>
+                <span>AI Illustration</span>
+              </span>
+            </span>
+          </button>
+
+          <button
+            class="track-card"
+            type="button"
+            data-case="zuoyebang"
+            aria-haspopup="dialog"
+            aria-label="Open Zuoyebang case study"
+          >
+            <span class="jewel-case">
+              <span class="jewel-hinge" aria-hidden="true"></span>
+              <span class="case-art">
+                <img
+                  src="./assets/covers/zuoyebang.png"
+                  alt="Zuoyebang K12 illustration system"
+                  width="1395"
+                  height="1395"
+                  loading="lazy"
+                />
+              </span>
+              <span class="quick-view">Quick view ↗</span>
+            </span>
+            <span class="track-copy">
+              <span class="track-title">
+                <strong>作业帮 · ZYB</strong>
+                <small>K12 Education · 2022</small>
+              </span>
+              <span class="track-tags">
+                <span>K12 Illustration</span>
+                <span>Courseware</span>
+              </span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section class="about-view" id="about" aria-labelledby="about-title" hidden>
+        <div class="about-layout">
+          <div class="about-device">
+            <div class="about-plaque">
+              <span>Intuition · Craft · Strategy</span>
+              <i aria-hidden="true"></i>
+            </div>
+            <div class="about-browser">
+              <div class="about-screen">
+                <img
+                  src="./assets/about/portrait.jpg"
+                  alt="Portrait of Chuhong Zhou"
+                  width="410"
+                  height="575"
+                />
+                <span class="screen-glare" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+
+          <article class="about-bio">
+            <h1 id="about-title">Hi, I’m Chuhong.</h1>
+            <p>
+              I’m a UI/UX designer who enjoys turning complexity into clear, thoughtful,
+              and quietly delightful digital experiences. Most recently at
+              <strong>Microsoft</strong>, I bring AI into daily workflows, build visual
+              systems, and design the subtle experience moments that tie everything
+              together.
+            </p>
+            <p>
+              My work sits between systems thinking, visual craft, and product strategy.
+              I care about how information feels, how an interaction guides attention, and
+              how a small visual detail can make technology more human.
+            </p>
+            <p>
+              My background spans social products, K12 education, character illustration,
+              and AI-native tools. If you’d like to learn more about my process or a
+              selected project, <a href="mailto:2364854956@qq.com">let’s chat</a>.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lounge-view" id="lounge" aria-labelledby="lounge-title" hidden>
+        <div class="plate-scene">
+          <div class="turntable-plate" aria-hidden="true">
+            <span></span>
+          </div>
+          <div class="lounge-menu">
+            <div class="lounge-menu-panel" data-menu-panel>
+              <h1 id="lounge-title">Menu</h1>
+              <div class="menu-rule" aria-hidden="true"></div>
+              <div class="menu-questions">
+                <button type="button" data-answer="work">— How is it working with Chuhong?</button>
+                <button type="button" data-answer="care">— What does Chuhong care about?</button>
+                <button type="button" data-answer="inspire">— What inspires Chuhong?</button>
+                <button type="button" data-answer="surprise">— Surprise me</button>
+              </div>
+              <div class="menu-answer" hidden>
+                <p></p>
+                <button type="button" data-menu-back>← Back to menu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year">2026</span> Chuhong Zhou</span>
+      <nav class="footer-links" aria-label="Contact and resume">
+        <a href="mailto:2364854956@qq.com">Contact</a>
+        <i aria-hidden="true">·</i>
+        <span>Suzhou · <span id="local-time">--:--</span></span>
+        <i aria-hidden="true">·</i>
+        <a href="./assets/documents/resume.png" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </footer>
+
+    <dialog class="case-dialog" id="case-dialog" aria-labelledby="case-title">
+      <div class="pr-shell" tabindex="-1">
+        <aside class="pr-sidebar">
+          <div class="pr-sidebar-top">
+            <button class="pr-close" type="button" aria-label="Close case study">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 6l12 12M18 6 6 18" />
+              </svg>
+              <span>Close</span>
+            </button>
+          </div>
+
+          <div class="pr-now-playing">
+            <p class="pr-project-label">
+              <span data-field="index">/01</span>
+              <span data-field="practice">Microsoft</span>
+            </p>
+            <h2 class="pr-np-title" id="case-title" data-field="title">SICO.ai</h2>
+            <div class="pr-np-meta">
+              <div>
+                <span class="k">Year</span>
+                <span class="v" data-field="year">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pr-about">
+            <p class="pr-about-label">Highlight</p>
+            <p class="pr-about-text" data-field="category"></p>
+          </div>
+
+          <div class="pr-credits-card">
+            <p class="pr-credits-label">Detail</p>
+            <div class="pr-credits-row">
+              <span class="k">Role</span>
+              <span class="v" data-field="role"></span>
+            </div>
+            <div class="pr-credits-row">
+              <span class="k">Tools</span>
+              <span class="v" data-field="tools"></span>
+            </div>
+            <div class="pr-credits-row">
+              <span class="k">Project Type</span>
+              <span class="v" data-field="type"></span>
+            </div>
+          </div>
+
+          <a class="pr-fullcase" data-field="fullcase" href="./assets/full-cases/sico.png" target="_blank" rel="noopener">
+            <span>Open full case</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </aside>
+
+        <main class="pr-main">
+          <section class="pr-hero">
+            <img class="pr-hero-img" data-field="hero" alt="" width="1800" height="900" />
+          </section>
+
+          <section class="pr-sico-story" data-sico-story aria-label="SICO.ai project story">
+            <article class="pr-story-block pr-story-overview" aria-labelledby="sico-overview-title">
+              <div class="pr-overview-grid">
+                <div class="pr-overview-panel">
+                  <header class="pr-story-heading">
+                    <div>
+                      <span class="pr-story-kicker">01 / Context</span>
+                      <h3 id="sico-overview-title">
+                        Project Overview
+                        <span>项目介绍</span>
+                      </h3>
+                    </div>
+                  </header>
+
+                  <div class="pr-overview-copy">
+                    <p class="pr-overview-lede">让复杂 Agent 技术，成为清晰、可行动的工作体验。</p>
+                    <p>
+                      SICO.ai 是一个面向人类与数字员工的开源协作平台。设计将能力重组为一条清晰路径：从任务执行、持续学习，到真正参与生产。
+                    </p>
+                    <p class="pr-overview-en">
+                      An open-source platform where humans and digital workers learn, execute, and
+                      grow together.
+                    </p>
+                  </div>
+                </div>
+
+                <figure
+                  class="pr-overview-globe"
+                  data-globe-stage
+                  tabindex="0"
+                  role="group"
+                  aria-label="Interactive 3D globe. Move the pointer to explore and drag to rotate."
+                  aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown"
+                >
+                  <div class="pr-globe-viewport" data-globe-viewport>
+                    <img
+                      class="pr-globe-fallback"
+                      data-globe-fallback
+                      src="./assets/cases/earth-reference.png"
+                      alt=""
+                      width="760"
+                      height="760"
+                    />
+                    <div class="pr-globe-avatar-layer" data-globe-avatar-layer></div>
+                  </div>
+                  <figcaption class="pr-globe-hint">
+                    <span>Move to explore</span>
+                    <i aria-hidden="true"></i>
+                    <span>Drag to rotate</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <article class="pr-story-block pr-story-audience" aria-labelledby="sico-audience-title">
+              <header class="pr-story-heading">
+                <div>
+                  <span class="pr-story-kicker">04 / Audience</span>
+                  <h3 id="sico-audience-title">
+                    Target user
+                    <span>目标用户</span>
+                  </h3>
+                </div>
+                <p class="pr-story-aside">Who builds, operates,<br />and scales AI workers.</p>
+              </header>
+
+              <div class="pr-audience-grid" data-audience-grid>
+                <button
+                  class="pr-audience-card"
+                  type="button"
+                  aria-pressed="false"
+                  style="--audience-share: 30%"
+                >
+                  <span class="pr-audience-top">
+                    <span class="pr-audience-letter">A</span>
+                    <span class="pr-audience-role">AI 开发者 / Agent 工程师</span>
+                    <span class="pr-audience-toggle" aria-hidden="true"></span>
+                  </span>
+                  <span class="pr-audience-main">
+                    <span class="pr-audience-avatar">
+                      <img src="./assets/target-users/user-a-full.png" alt="" width="189" height="219" />
+                    </span>
+                    <span class="pr-audience-copy">
+                      <span class="pr-audience-summary">构建 Agent、开发技能、集成模型与工具</span>
+                      <span class="pr-audience-need">
+                        <small>需求：</small>
+                        <strong>快速构建和部署 Agent</strong>
+                      </span>
+                    </span>
+                  </span>
+                  <span class="pr-audience-meta">
+                    <span class="pr-audience-share">
+                      <span>占比</span>
+                      <i aria-hidden="true"><b></b></i>
+                      <strong>30%</strong>
+                    </span>
+                    <span class="pr-audience-focus">
+                      <span>产品关注点：</span>
+                      <span>提升开发效率</span>
+                      <span>SDK、API、Skills</span>
+                    </span>
+                  </span>
+                </button>
+
+                <button
+                  class="pr-audience-card"
+                  type="button"
+                  aria-pressed="false"
+                  style="--audience-share: 25%"
+                >
+                  <span class="pr-audience-top">
+                    <span class="pr-audience-letter">B</span>
+                    <span class="pr-audience-role">企业管理者 / 自动化负责人</span>
+                    <span class="pr-audience-toggle" aria-hidden="true"></span>
+                  </span>
+                  <span class="pr-audience-main">
+                    <span class="pr-audience-avatar">
+                      <img src="./assets/target-users/user-b-full.png" alt="" width="189" height="219" />
+                    </span>
+                    <span class="pr-audience-copy">
+                      <span class="pr-audience-summary">管理数字员工</span>
+                      <span class="pr-audience-need">
+                        <small>需求：</small>
+                        <strong>管理数字员工、提升团队生产效率</strong>
+                      </span>
+                    </span>
+                  </span>
+                  <span class="pr-audience-meta">
+                    <span class="pr-audience-share">
+                      <span>占比</span>
+                      <i aria-hidden="true"><b></b></i>
+                      <strong>25%</strong>
+                    </span>
+                    <span class="pr-audience-focus">
+                      <span>产品关注点：</span>
+                      <span>工作管理、绩效</span>
+                      <span>降低运营成本</span>
+                    </span>
+                  </span>
+                </button>
+
+                <button
+                  class="pr-audience-card"
+                  type="button"
+                  aria-pressed="false"
+                  style="--audience-share: 20%"
+                >
+                  <span class="pr-audience-top">
+                    <span class="pr-audience-letter">C</span>
+                    <span class="pr-audience-role">创业者 / 中小企业</span>
+                    <span class="pr-audience-toggle" aria-hidden="true"></span>
+                  </span>
+                  <span class="pr-audience-main">
+                    <span class="pr-audience-avatar">
+                      <img src="./assets/target-users/user-c-full.png" alt="" width="189" height="219" />
+                    </span>
+                    <span class="pr-audience-copy">
+                      <span class="pr-audience-summary">降低运营成本，搭建自动化业务团队</span>
+                      <span class="pr-audience-need">
+                        <small>需求：</small>
+                        <strong>自动化业务流程</strong>
+                      </span>
+                    </span>
+                  </span>
+                  <span class="pr-audience-meta">
+                    <span class="pr-audience-share">
+                      <span>占比</span>
+                      <i aria-hidden="true"><b></b></i>
+                      <strong>20%</strong>
+                    </span>
+                    <span class="pr-audience-focus">
+                      <span>产品关注点：</span>
+                      <span>易用性、成本</span>
+                      <span>减少人力投入</span>
+                    </span>
+                  </span>
+                </button>
+
+                <button
+                  class="pr-audience-card"
+                  type="button"
+                  aria-pressed="false"
+                  style="--audience-share: 15%"
+                >
+                  <span class="pr-audience-top">
+                    <span class="pr-audience-letter">D</span>
+                    <span class="pr-audience-role">企业 IT / AI 转型团队</span>
+                    <span class="pr-audience-toggle" aria-hidden="true"></span>
+                  </span>
+                  <span class="pr-audience-main">
+                    <span class="pr-audience-avatar">
+                      <img src="./assets/target-users/user-d-full.png" alt="" width="189" height="219" />
+                    </span>
+                    <span class="pr-audience-copy">
+                      <span class="pr-audience-summary">部署、治理、安全与企业系统集成</span>
+                      <span class="pr-audience-need">
+                        <small>需求：</small>
+                        <strong>企业级 AI 部署</strong>
+                      </span>
+                    </span>
+                  </span>
+                  <span class="pr-audience-meta">
+                    <span class="pr-audience-share">
+                      <span>占比</span>
+                      <i aria-hidden="true"><b></b></i>
+                      <strong>15%</strong>
+                    </span>
+                    <span class="pr-audience-focus">
+                      <span>产品关注点：</span>
+                      <span>权限、审计、私有部署</span>
+                      <span>安全与规模化</span>
+                    </span>
+                  </span>
+                </button>
+
+                <button
+                  class="pr-audience-card"
+                  type="button"
+                  aria-pressed="false"
+                  style="--audience-share: 10%"
+                >
+                  <span class="pr-audience-top">
+                    <span class="pr-audience-letter">E</span>
+                    <span class="pr-audience-role">AI 服务商 / 咨询机构</span>
+                    <span class="pr-audience-toggle" aria-hidden="true"></span>
+                  </span>
+                  <span class="pr-audience-main">
+                    <span class="pr-audience-avatar">
+                      <img src="./assets/target-users/user-e-full.png" alt="" width="189" height="219" />
+                    </span>
+                    <span class="pr-audience-copy">
+                      <span class="pr-audience-summary">为客户交付数字员工与自动化解决方案</span>
+                      <span class="pr-audience-need">
+                        <small>需求：</small>
+                        <strong>快速交付方案</strong>
+                      </span>
+                    </span>
+                  </span>
+                  <span class="pr-audience-meta">
+                    <span class="pr-audience-share">
+                      <span>占比</span>
+                      <i aria-hidden="true"><b></b></i>
+                      <strong>10%</strong>
+                    </span>
+                    <span class="pr-audience-focus">
+                      <span>产品关注点：</span>
+                      <span>模板、集成、复用</span>
+                      <span>扩大项目交付能力</span>
+                    </span>
+                  </span>
+                </button>
+              </div>
+              <p class="pr-audience-hint">
+                <span>Drag to shuffle</span>
+                拖动卡片切换目标用户
+              </p>
+            </article>
+
+            <article class="pr-story-block pr-story-analysis" aria-labelledby="sico-analysis-title">
+              <header class="pr-story-heading">
+                <div>
+                  <span class="pr-story-kicker">02 / Research</span>
+                  <h3 id="sico-analysis-title">
+                    Data analysis
+                    <span>数据分析</span>
+                  </h3>
+                </div>
+                <p class="pr-story-aside">Clarity begins with<br />questions users cannot answer.</p>
+              </header>
+
+              <div class="pr-analysis-grid">
+                <section class="pr-analysis-card pr-question-card">
+                  <div class="pr-card-heading">
+                    <span>01</span>
+                    <h4>同类型 Agent 产品的共性 UX 缺点</h4>
+                  </div>
+                  <div
+                    class="pr-question-stack"
+                    data-question-stack
+                    aria-label="Common user questions in a scroll-revealed chat stream"
+                  >
+                    <p class="pr-question-bubble">Agent thinking 还是 working？</p>
+                    <p class="pr-question-bubble">现在能退出吗？我的东西保存了吗？</p>
+                    <p class="pr-question-bubble">是 training 还是 execution？</p>
+                    <p class="pr-question-bubble">需要谁批准？后面会发生什么？</p>
+                  </div>
+                </section>
+
+              </div>
+            </article>
+
+            <article class="pr-story-block pr-story-drawbacks" aria-labelledby="sico-drawbacks-title">
+              <header class="pr-story-heading">
+                <div>
+                  <span class="pr-story-kicker">03 / Synthesis</span>
+                  <h3 id="sico-drawbacks-title">
+                    Common drawbacks of similar products
+                    <span>同类型产品的共性缺点</span>
+                  </h3>
+                </div>
+                <p class="pr-story-aside">The product must prove<br />why it can be trusted.</p>
+              </header>
+
+              <div class="pr-drawback-interaction">
+                <p class="pr-drawback-hint">
+                  <span>Interactive index</span>
+                  Hover or focus each issue to reveal the design response.
+                </p>
+
+                <div class="pr-drawback-list">
+                  <article class="pr-drawback-item">
+                    <button
+                      class="pr-drawback-toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="drawback-response-1"
+                    >
+                      <span class="pr-drawback-number">01</span>
+                      <span class="pr-drawback-title">Agent 能做事，但无法证明为什么可靠</span>
+                      <span class="pr-drawback-action" aria-hidden="true"></span>
+                    </button>
+                    <div class="pr-drawback-detail" id="drawback-response-1">
+                      <div>
+                        <div class="pr-drawback-detail-inner">
+                          <div class="pr-drawback-copy">
+                            <span>Observed issue / 观察问题</span>
+                            <p>
+                              大量产品展示的是成功结果，缺少完整执行轨迹、失败归因、环境快照、人工介入记录与重试前后对比。
+                            </p>
+                          </div>
+                          <div class="pr-drawback-response">
+                            <span>SICO's response / 设计回应</span>
+                            <p>
+                              把执行轨迹、失败归因、环境快照和人工介入记录放到产品一级导航，让可靠性可以被看见。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="pr-drawback-item">
+                    <button
+                      class="pr-drawback-toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="drawback-response-2"
+                    >
+                      <span class="pr-drawback-number">02</span>
+                      <span class="pr-drawback-title">人工纠正没有形成持续复利</span>
+                      <span class="pr-drawback-action" aria-hidden="true"></span>
+                    </button>
+                    <div class="pr-drawback-detail" id="drawback-response-2">
+                      <div>
+                        <div class="pr-drawback-detail-inner">
+                          <div class="pr-drawback-copy">
+                            <span>Observed issue / 观察问题</span>
+                            <p>许多 Agent 的失败处理流程是：失败 → 人工修正 → 重新执行 → 下一次再次失败。</p>
+                          </div>
+                          <div class="pr-drawback-response">
+                            <span>SICO's response / 设计回应</span>
+                            <p class="pr-response-flow">
+                              失败 <i>→</i> 归因 <i>→</i> Operator 纠正 <i>→</i> 经验提取
+                              <i>→</i> 重新评估 <i>→</i> 发布能力更新
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="pr-drawback-item">
+                    <button
+                      class="pr-drawback-toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="drawback-response-3"
+                    >
+                      <span class="pr-drawback-number">03</span>
+                      <span class="pr-drawback-title">产品过度依赖聊天框</span>
+                      <span class="pr-drawback-action" aria-hidden="true"></span>
+                    </button>
+                    <div class="pr-drawback-detail" id="drawback-response-3">
+                      <div>
+                        <div class="pr-drawback-detail-inner">
+                          <div class="pr-drawback-copy">
+                            <span>Observed issue / 观察问题</span>
+                            <p>
+                              聊天适合表达意图，但不适合管理大量任务、比较多次运行结果、处理异常队列、查看版本演化或承担业务
+                              SLA。
+                            </p>
+                          </div>
+                          <div class="pr-drawback-response">
+                            <span>SICO's response / 设计回应</span>
+                            <p>以任务队列和数字员工管理为主要界面，聊天作为表达意图的辅助入口。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="pr-drawback-item">
+                    <button
+                      class="pr-drawback-toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="drawback-response-4"
+                    >
+                      <span class="pr-drawback-number">04</span>
+                      <span class="pr-drawback-title">构建者强，运营者弱</span>
+                      <span class="pr-drawback-action" aria-hidden="true"></span>
+                    </button>
+                    <div class="pr-drawback-detail" id="drawback-response-4">
+                      <div>
+                        <div class="pr-drawback-detail-inner">
+                          <div class="pr-drawback-copy">
+                            <span>Observed issue / 观察问题</span>
+                            <p>
+                              多数平台首先服务 Developer，但真正决定企业持续采用的是 Operator 与
+                              Employer。缺少面向 Operator 的产品层，会让工具在完成开发演示后难以被长期运营。
+                            </p>
+                          </div>
+                          <div class="pr-drawback-response">
+                            <span>SICO's response / 设计回应</span>
+                            <p>把任务分配、异常处理、经验管理与交付审核纳入核心产品流程。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="pr-drawback-item">
+                    <button
+                      class="pr-drawback-toggle"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="drawback-response-5"
+                    >
+                      <span class="pr-drawback-number">05</span>
+                      <span class="pr-drawback-title">缺少业务价值闭环</span>
+                      <span class="pr-drawback-action" aria-hidden="true"></span>
+                    </button>
+                    <div class="pr-drawback-detail" id="drawback-response-5">
+                      <div>
+                        <div class="pr-drawback-detail-inner">
+                          <div class="pr-drawback-copy">
+                            <span>Observed issue / 观察问题</span>
+                            <p>
+                              很多产品展示 Token、步骤和运行次数，却没有回答：节省了多少人工时间、单位成本下降多少、人工介入率是否持续下降、质量是否稳定，以及是否值得扩大部署。
+                            </p>
+                          </div>
+                          <div class="pr-drawback-response">
+                            <span>SICO's response / 设计回应</span>
+                            <p>用节省时间、单位成本、人工介入率与质量稳定性，构成可追踪的价值闭环。</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article class="pr-story-block pr-story-competitors" aria-labelledby="sico-competitors-title">
+              <header class="pr-story-heading">
+                <div>
+                  <span class="pr-story-kicker">05 / Competitive landscape</span>
+                  <h3 id="sico-competitors-title">
+                    Competing products
+                    <span>竞品</span>
+                  </h3>
+                </div>
+                <p class="pr-story-aside">From agent tooling<br />to digital workforce.</p>
+              </header>
+
+              <figure class="pr-competitor-figure">
+                <img
+                  src="./assets/cases/sico-competitive-landscape.png"
+                  alt="SICO.ai competitive landscape comparing developer-oriented agent tools, digital employee products, general-purpose AI models and business automation platforms"
+                  width="1672"
+                  height="848"
+                />
+              </figure>
+            </article>
+
+            <article class="pr-story-block pr-story-system" aria-labelledby="sico-system-title">
+              <header class="pr-story-heading">
+                <div>
+                  <span class="pr-story-kicker">06 / Design system</span>
+                  <h3 id="sico-system-title">
+                    AI-assisted component library
+                    <span>AI × Figma MCP</span>
+                  </h3>
+                </div>
+                <p class="pr-story-aside">From visual language<br />to shared components.</p>
+              </header>
+
+              <div class="pr-system-grid">
+                <div class="pr-system-intro">
+                  <p class="pr-system-lede">
+                    用 AI 工具与 Figma MCP，把设计语言变成可复用、可验证、可交付的组件系统。
+                  </p>
+                  <p>
+                    先从 Figma Variables 和既有组件中提取规则，再由 AI 补齐状态与边界场景，最后通过
+                    Figma MCP 将设计节点映射到生产代码。生成只是起点，一致性检查、语义命名和代码验证才是组件库真正可用的关键。
+                  </p>
+                  <div class="pr-system-tags" aria-label="Tools used">
+                    <span>AI tools</span>
+                    <span>Figma Variables</span>
+                    <span>Figma MCP</span>
+                    <span>Code Connect</span>
+                  </div>
+                </div>
+
+                <div
+                  class="pr-system-hover"
+                  data-system-hover
+                  data-active-preview="colors"
+                  aria-label="SICO design system asset index with hover previews"
+                >
+                  <ol class="pr-hover-links">
+                    <li>
+                      <button
+                        class="pr-hover-link is-active"
+                        type="button"
+                        data-preview="colors"
+                        aria-controls="system-preview-colors"
+                        aria-pressed="false"
+                      >
+                        <span class="pr-hover-label">颜色系统</span>
+                        <span class="pr-hover-note">品牌、语义与中性色</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="pr-hover-link"
+                        type="button"
+                        data-preview="typography"
+                        aria-controls="system-preview-typography"
+                        aria-pressed="false"
+                      >
+                        <span class="pr-hover-label">字体规范</span>
+                        <span class="pr-hover-note">编辑式信息层级</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="pr-hover-link"
+                        type="button"
+                        data-preview="radius"
+                        aria-controls="system-preview-radius"
+                        aria-pressed="false"
+                      >
+                        <span class="pr-hover-label">圆角与尺寸</span>
+                        <span class="pr-hover-note">柔和的控件与统一节奏</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="pr-hover-link"
+                        type="button"
+                        data-preview="actions"
+                        aria-controls="system-preview-actions"
+                        aria-pressed="false"
+                      >
+                        <span class="pr-hover-label">按钮层级</span>
+                        <span class="pr-hover-note">主操作与状态反馈</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="pr-hover-link"
+                        type="button"
+                        data-preview="tags"
+                        aria-controls="system-preview-tags"
+                        aria-pressed="false"
+                      >
+                        <span class="pr-hover-label">标签</span>
+                        <span class="pr-hover-note">状态、筛选与反馈</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="pr-hover-link"
+                        type="button"
+                        data-preview="avatars"
+                        aria-controls="system-preview-avatars"
+                        aria-pressed="false"
+                      >
+                        <span class="pr-hover-label">徽标与头像</span>
+                        <span class="pr-hover-note">身份、角色与归属</span>
+                      </button>
+                    </li>
+                  </ol>
+
+                  <div class="pr-hover-stage" aria-hidden="true">
+                    <figure
+                      class="pr-hover-preview pr-cover-preview is-active"
+                      id="system-preview-colors"
+                      data-hover-preview="colors"
+                    >
+                      <img
+                        src="./assets/design-system/color-system.png"
+                        alt=""
+                        width="2252"
+                        height="1292"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <figure
+                      class="pr-hover-preview pr-cover-preview"
+                      id="system-preview-typography"
+                      data-hover-preview="typography"
+                    >
+                      <img
+                        src="./assets/design-system/typography.png"
+                        alt=""
+                        width="2252"
+                        height="1292"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <figure
+                      class="pr-hover-preview pr-cover-preview"
+                      id="system-preview-radius"
+                      data-hover-preview="radius"
+                    >
+                      <img
+                        src="./assets/design-system/radius-cover.png"
+                        alt=""
+                        width="2252"
+                        height="1292"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <figure
+                      class="pr-hover-preview pr-cover-preview"
+                      id="system-preview-actions"
+                      data-hover-preview="actions"
+                    >
+                      <img
+                        src="./assets/design-system/button-hierarchy.png"
+                        alt=""
+                        width="2252"
+                        height="1292"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <figure
+                      class="pr-hover-preview pr-cover-preview"
+                      id="system-preview-tags"
+                      data-hover-preview="tags"
+                    >
+                      <img
+                        src="./assets/design-system/tags.png"
+                        alt=""
+                        width="2252"
+                        height="1292"
+                        loading="lazy"
+                      />
+                    </figure>
+
+                    <figure
+                      class="pr-hover-preview pr-cover-preview"
+                      id="system-preview-avatars"
+                      data-hover-preview="avatars"
+                    >
+                      <img
+                        src="./assets/design-system/badges-avatars.png"
+                        alt=""
+                        width="2252"
+                        height="1292"
+                        loading="lazy"
+                      />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pr-system-pipeline" aria-label="AI-assisted component library workflow">
+                <div class="pr-system-step">
+                  <span>01 / Audit</span>
+                  <strong>提取变量与组件</strong>
+                  <p>从 Figma 中识别 token、组件与状态，建立统一语义。</p>
+                </div>
+                <div class="pr-system-step">
+                  <span>02 / Generate</span>
+                  <strong>补齐变体与边界</strong>
+                  <p>用 AI 生成缺失状态，再人工校对视觉与交互规则。</p>
+                </div>
+                <div class="pr-system-step">
+                  <span>03 / Connect</span>
+                  <strong>通过 MCP 映射代码</strong>
+                  <p>把设计节点、组件属性和生产实现建立可追踪连接。</p>
+                </div>
+                <div class="pr-system-step">
+                  <span>04 / Validate</span>
+                  <strong>验证后发布复用</strong>
+                  <p>检查语义、可访问性与代码一致性，再沉淀为团队资产。</p>
+                </div>
+              </div>
+
+              <section class="pr-final-experience" aria-labelledby="sico-final-experience-title">
+                <header class="pr-final-heading">
+                  <div>
+                    <span>07 / Final experience</span>
+                    <h4 id="sico-final-experience-title">
+                      Final Experience
+                      <small>最终界面 · 核心页面 · 关键交互</small>
+                    </h4>
+                  </div>
+                </header>
+
+                <div class="pr-compare-list">
+                  <article class="pr-compare-item">
+                    <div
+                      class="pr-compare-frame"
+                      data-compare-slider
+                      style="--compare-position: 50%"
+                      role="group"
+                      aria-label="Before and after comparison of the knowledge upload flow"
+                    >
+                      <img
+                        class="pr-compare-image pr-compare-after"
+                        src="./assets/cases/final-experience-after-1-new.png"
+                        alt="After redesign of the SICO knowledge upload flow"
+                        width="1303"
+                        height="819"
+                        loading="lazy"
+                      />
+                      <div class="pr-compare-before-layer" aria-hidden="true">
+                        <img
+                          class="pr-compare-image"
+                          src="./assets/cases/final-experience-before-1-new.png"
+                          alt=""
+                          width="1303"
+                          height="819"
+                          loading="lazy"
+                        />
+                      </div>
+                      <span class="pr-compare-label is-before">Before</span>
+                      <span class="pr-compare-label is-after">After</span>
+                      <button
+                        class="pr-compare-handle"
+                        type="button"
+                        role="slider"
+                        aria-label="Before and after comparison position"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="50"
+                      >
+                        <svg viewBox="0 0 30 30" aria-hidden="true">
+                          <path d="m12.6 11.4-3.2 3.6 3.2 3.6M17.4 11.4l3.2 3.6-3.2 3.6" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="pr-compare-caption">
+                      <span>01 / Knowledge import</span>
+                      <div>
+                        <p><b>Before</b> 上传与链接导入混在同一区域，入口和规则缺少清晰层级。</p>
+                        <p><b>After</b> 将使用场景、附件与导入方式分组，让操作路径与上传结果更易确认。</p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="pr-compare-item">
+                    <div
+                      class="pr-compare-frame"
+                      data-compare-slider
+                      style="--compare-position: 50%"
+                      role="group"
+                      aria-label="Before and after comparison of the third-party data import flow"
+                    >
+                      <img
+                        class="pr-compare-image pr-compare-after"
+                        src="./assets/cases/final-experience-after-2-source.png"
+                        alt="After redesign of the third-party data import flow"
+                        width="1303"
+                        height="819"
+                        loading="lazy"
+                      />
+                      <div class="pr-compare-before-layer" aria-hidden="true">
+                        <img
+                          class="pr-compare-image"
+                          src="./assets/cases/final-experience-before-2-source.png"
+                          alt=""
+                          width="1303"
+                          height="819"
+                          loading="lazy"
+                        />
+                      </div>
+                      <span class="pr-compare-label is-before">Before</span>
+                      <span class="pr-compare-label is-after">After</span>
+                      <button
+                        class="pr-compare-handle"
+                        type="button"
+                        role="slider"
+                        aria-label="Before and after comparison position"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="50"
+                      >
+                        <svg viewBox="0 0 30 30" aria-hidden="true">
+                          <path d="m12.6 11.4-3.2 3.6 3.2 3.6M17.4 11.4l3.2 3.6-3.2 3.6" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="pr-compare-caption">
+                      <span>02 / Data source import</span>
+                      <div>
+                        <p><b>Before</b> 弹窗尺寸与层级不一致，数据源和文件选择过于拥挤。</p>
+                        <p><b>After</b> 统一弹窗结构，按账户、组织与文件顺序组织导入路径。</p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="pr-compare-item">
+                    <div
+                      class="pr-compare-frame is-trimmed-source"
+                      data-compare-slider
+                      style="--compare-position: 50%"
+                      role="group"
+                      aria-label="Before and after comparison of the projects overview"
+                    >
+                      <img
+                        class="pr-compare-image pr-compare-after"
+                        src="./assets/cases/final-experience-after-3-bleed.png"
+                        alt="After redesign of the SICO projects overview"
+                        width="3909"
+                        height="2457"
+                        loading="lazy"
+                      />
+                      <div class="pr-compare-before-layer" aria-hidden="true">
+                        <img
+                          class="pr-compare-image"
+                          src="./assets/cases/final-experience-before-3-bleed.png"
+                          alt=""
+                          width="3909"
+                          height="2124"
+                          loading="lazy"
+                        />
+                      </div>
+                      <span class="pr-compare-label is-before">Before</span>
+                      <span class="pr-compare-label is-after">After</span>
+                      <button
+                        class="pr-compare-handle"
+                        type="button"
+                        role="slider"
+                        aria-label="Before and after comparison position"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="50"
+                      >
+                        <svg viewBox="0 0 30 30" aria-hidden="true">
+                          <path d="m12.6 11.4-3.2 3.6 3.2 3.6M17.4 11.4l3.2 3.6-3.2 3.6" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="pr-compare-caption">
+                      <span>03 / Projects overview</span>
+                      <div>
+                        <p><b>Before</b> 项目页以简单列表承载内容，信息密度与浏览节奏较弱。</p>
+                        <p><b>After</b> 改为卡片式项目首页，补充进度、团队与任务描述，提升识别与浏览效率。</p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="pr-compare-item">
+                    <div
+                      class="pr-compare-frame"
+                      data-compare-slider
+                      style="--compare-position: 50%"
+                      role="group"
+                      aria-label="Before and after comparison of the collaboration conversation"
+                    >
+                      <img
+                        class="pr-compare-image pr-compare-after"
+                        src="./assets/cases/final-experience-after-4-collaboration.png"
+                        alt="After redesign of the SICO collaboration conversation"
+                        width="3909"
+                        height="2457"
+                        loading="lazy"
+                      />
+                      <div class="pr-compare-before-layer" aria-hidden="true">
+                        <img
+                          class="pr-compare-image"
+                          src="./assets/cases/final-experience-before-4-collaboration.png"
+                          alt=""
+                          width="3909"
+                          height="2457"
+                          loading="lazy"
+                        />
+                      </div>
+                      <span class="pr-compare-label is-before">Before</span>
+                      <span class="pr-compare-label is-after">After</span>
+                      <button
+                        class="pr-compare-handle"
+                        type="button"
+                        role="slider"
+                        aria-label="Before and after comparison position"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="50"
+                      >
+                        <svg viewBox="0 0 30 30" aria-hidden="true">
+                          <path d="m12.6 11.4-3.2 3.6 3.2 3.6M17.4 11.4l3.2 3.6-3.2 3.6" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="pr-compare-caption">
+                      <span>04 / Collaboration</span>
+                      <div>
+                        <p><b>Before</b> 对话框区分较弱、视觉焦点不清晰，浏览时容易产生视觉疲劳。</p>
+                        <p><b>After</b> 强调品牌色的同时突出对话角色差异，让信息查找更快捷。</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <section class="pr-logo-design" aria-labelledby="sico-logo-design-title">
+                <header class="pr-logo-heading">
+                  <div>
+                    <span class="pr-logo-kicker">08 / Identity system</span>
+                    <h4 id="sico-logo-design-title">
+                      LOGO Design
+                      <small>Logo 设计 · 从共生关系到品牌识别</small>
+                    </h4>
+                  </div>
+                  <p>
+                    将“人类 × 数字员工”的协作关系，转译成一枚可延续、可识别的双圆共生符号。
+                  </p>
+                </header>
+
+                <figure class="pr-logo-hero">
+                  <img
+                    src="./assets/cases/logo/sico-logo-hero.png?v=20261124-logo-borders-31"
+                    alt="A robotic hand and a human hand meeting around a phone displaying the SICO.AI logo"
+                    width="1920"
+                    height="1072"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <figcaption>
+                    <span>SICO.AI / Human–Digital Worker Symbiosis</span>
+                    <span>Contact, connection, coexistence</span>
+                  </figcaption>
+                </figure>
+
+                <div class="pr-logo-process" aria-label="SICO.ai logo design process">
+                  <button
+                    class="pr-logo-step is-step-01"
+                    type="button"
+                    aria-pressed="false"
+                    aria-label="Design process, 设计过程. Activate to reveal the design insight."
+                  >
+                    <span class="pr-logo-step-inner">
+                      <span class="pr-logo-step-face pr-logo-step-front" aria-hidden="true">
+                        <span class="pr-logo-step-media">
+                          <img
+                            src="./assets/cases/logo/logo-process-01.png?v=20261124-logo-borders-31"
+                            alt=""
+                            width="175"
+                            height="233"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </span>
+                      </span>
+                      <span class="pr-logo-step-face pr-logo-step-back" aria-hidden="true">
+                        <span class="pr-logo-step-back-top">
+                          <span>01 / Process</span>
+                          <i></i>
+                        </span>
+                        <strong>Design process</strong>
+                        <em>设计过程</em>
+                        <p>真实语境 · 协作线索</p>
+                        <span class="pr-logo-step-back-foot">
+                          <span>Research</span>
+                          <span>↗</span>
+                        </span>
+                      </span>
+                    </span>
+                  </button>
+
+                  <button
+                    class="pr-logo-step is-step-02"
+                    type="button"
+                    aria-pressed="false"
+                    aria-label="Design sketch, 设计手稿. Activate to reveal the design insight."
+                  >
+                    <span class="pr-logo-step-inner">
+                      <span class="pr-logo-step-face pr-logo-step-front" aria-hidden="true">
+                        <span class="pr-logo-step-media">
+                          <img
+                            src="./assets/cases/logo/logo-process-02.png?v=20261124-logo-borders-31"
+                            alt=""
+                            width="175"
+                            height="315"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </span>
+                      </span>
+                      <span class="pr-logo-step-face pr-logo-step-back" aria-hidden="true">
+                        <span class="pr-logo-step-back-top">
+                          <span>02 / Sketch</span>
+                          <i></i>
+                        </span>
+                        <strong>Design Sketch</strong>
+                        <em>设计手稿</em>
+                        <p>双圆 · 环形 · 草图探索</p>
+                        <span class="pr-logo-step-back-foot">
+                          <span>Sketching</span>
+                          <span>↗</span>
+                        </span>
+                      </span>
+                    </span>
+                  </button>
+
+                  <button
+                    class="pr-logo-step is-step-03"
+                    type="button"
+                    aria-pressed="false"
+                    aria-label="Connect, 大量沟通与对接. Activate to reveal the design insight."
+                  >
+                    <span class="pr-logo-step-inner">
+                      <span class="pr-logo-step-face pr-logo-step-front" aria-hidden="true">
+                        <span class="pr-logo-step-media">
+                          <img
+                            src="./assets/cases/logo/logo-process-03.png?v=20261124-logo-borders-31"
+                            alt=""
+                            width="260"
+                            height="302"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </span>
+                      </span>
+                      <span class="pr-logo-step-face pr-logo-step-back" aria-hidden="true">
+                        <span class="pr-logo-step-back-top">
+                          <span>03 / Connect</span>
+                          <i></i>
+                        </span>
+                        <strong>Connect</strong>
+                        <em>大量的沟通与对接</em>
+                        <p>对齐比例 · 使用边界</p>
+                        <span class="pr-logo-step-back-foot">
+                          <span>Collaboration</span>
+                          <span>↗</span>
+                        </span>
+                      </span>
+                    </span>
+                  </button>
+
+                  <button
+                    class="pr-logo-step is-step-04"
+                    type="button"
+                    aria-pressed="false"
+                    aria-label="Done, 完成. Activate to reveal the design insight."
+                  >
+                    <span class="pr-logo-step-inner">
+                      <span class="pr-logo-step-face pr-logo-step-front" aria-hidden="true">
+                        <span class="pr-logo-step-media">
+                          <img
+                            src="./assets/cases/logo/logo-process-04.png?v=20261124-logo-borders-31"
+                            alt=""
+                            width="216"
+                            height="252"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </span>
+                      </span>
+                      <span class="pr-logo-step-face pr-logo-step-back" aria-hidden="true">
+                        <span class="pr-logo-step-back-top">
+                          <span>04 / Done</span>
+                          <i></i>
+                        </span>
+                        <strong>Done</strong>
+                        <em>完成！</em>
+                        <p>品牌识别 · 系统延展</p>
+                        <span class="pr-logo-step-back-foot">
+                          <span>Identity</span>
+                          <span>↗</span>
+                        </span>
+                      </span>
+                    </span>
+                  </button>
+                </div>
+
+                <figure class="pr-logo-construction">
+                  <img
+                    src="./assets/cases/logo/sico-logo-construction.png?v=20261124-logo-borders-31"
+                    alt="SICO.AI logo construction and the brand concept equation: Möbius loop plus human and digital worker equals a shared future"
+                    width="775"
+                    height="477"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+
+                <div class="pr-logo-statement">
+                  <p>
+                    乌斯比环代表持续循环，双圆代表人类与数字员工。两者叠加，成为“共生未来”的品牌承诺。
+                  </p>
+                </div>
+              </section>
+
+              <section class="pr-login-showcase" aria-labelledby="sico-login-showcase-title">
+                <header class="pr-login-heading">
+                  <div>
+                    <span class="pr-login-kicker">09 / Login experience</span>
+                    <h4 id="sico-login-showcase-title">
+                      SICO Login
+                      <small>Sico 登录页 · 沉浸式产品体验预览</small>
+                    </h4>
+                  </div>
+                </header>
+
+                <div class="pr-macbook-react-root" id="sico-macbook-root"></div>
+
+                <figure class="pr-login-analysis">
+                  <img
+                    src="./assets/cases/login/sico-login-analysis.png"
+                    alt="SICO login product expansion styles and mouse-driven animation effects"
+                    width="1678"
+                    height="885"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </section>
+
+              <section class="pr-github-visual" data-github-visual aria-labelledby="sico-github-visual-title">
+                <header class="pr-github-visual-heading">
+                  <div>
+                    <span class="pr-github-visual-kicker">10 / Visual page design</span>
+                    <h4 id="sico-github-visual-title">
+                      GitHub-SICO Visual Page Design
+                      <small>GitHub-SICO 视觉页面设计</small>
+                    </h4>
+                  </div>
+                  <a
+                    class="pr-github-visual-link"
+                    href="https://github.com/microsoft/Sico"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    github.com/microsoft/Sico
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </header>
+
+                <div class="pr-github-visual-body">
+                  <div class="pr-github-visual-stage" aria-live="polite">
+                    <figure class="pr-github-visual-frame is-active" data-github-visual-image="intro">
+                      <img
+                        src="./assets/cases/login/sico-github-intro.png"
+                        alt="SICO blue gradient brand introduction visual"
+                        width="1965"
+                        height="677"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </figure>
+                    <figure class="pr-github-visual-frame" data-github-visual-image="network">
+                      <img
+                        src="./assets/cases/login/sico-github-network.png"
+                        alt="SICO vendor and digital worker relationship network"
+                        width="2085"
+                        height="897"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </figure>
+                    <figure class="pr-github-visual-frame" data-github-visual-image="bpo">
+                      <img
+                        src="./assets/cases/login/sico-github-bpo.png"
+                        alt="BPO technology transformation timeline from ERP to RPA to AI"
+                        width="2055"
+                        height="926"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </figure>
+                    <figure class="pr-github-visual-frame" data-github-visual-image="capabilities">
+                      <img
+                        src="./assets/cases/login/sico-github-capabilities.png"
+                        alt="Digital Worker capability architecture with Cortex, Action and MemorySense"
+                        width="1964"
+                        height="999"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </figure>
+                  </div>
+
+                  <div class="pr-github-visual-list">
+                    <article class="pr-github-visual-item is-open" data-github-visual-item="intro">
+                      <button
+                        class="pr-github-visual-trigger"
+                        type="button"
+                        aria-expanded="true"
+                      >
+                        <span class="pr-github-visual-index">01</span>
+                        <span class="pr-github-visual-title">
+                          Brand Introduction Image
+                          <small>品牌介绍图</small>
+                        </span>
+                        <i aria-hidden="true"></i>
+                      </button>
+                      <div class="pr-github-visual-copy">
+                        <p>
+                          主视觉采用蓝紫渐变与柔和光效，呼应 SICO 共生智能的科技基因；品牌 Logo 与 Slogan 位于左侧视觉锚点，先建立识别，再让光带承接数据链路与智能协同的想象。
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="pr-github-visual-item" data-github-visual-item="network">
+                      <button
+                        class="pr-github-visual-trigger"
+                        type="button"
+                        aria-expanded="false"
+                      >
+                        <span class="pr-github-visual-index">02</span>
+                        <span class="pr-github-visual-title">
+                          What is Sico
+                          <small>Sico 是什么</small>
+                        </span>
+                        <i aria-hidden="true"></i>
+                      </button>
+                      <div class="pr-github-visual-copy">
+                        <p>
+                          以节点与连线表达 Vendor、SICO、Vendor Operator、Digital Worker 的协作关系。核心主体通过尺寸、色彩与亮度建立层级，辅助角色退后，让平台枢纽定位被快速理解。
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="pr-github-visual-item" data-github-visual-item="bpo">
+                      <button
+                        class="pr-github-visual-trigger"
+                        type="button"
+                        aria-expanded="false"
+                      >
+                        <span class="pr-github-visual-index">03</span>
+                        <span class="pr-github-visual-title">
+                          The development of BPO
+                          <small>BPO 的发展</small>
+                        </span>
+                        <i aria-hidden="true"></i>
+                      </button>
+                      <div class="pr-github-visual-copy">
+                        <p>
+                          用线性时间轴串联 ERP、RPA 与 AI 三个阶段。从一个冷静的灰阶起点逐步过渡到品牌蓝紫，表达技术能力的持续演化，也把复杂叙事压进一条可直接阅读的路径。
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="pr-github-visual-item" data-github-visual-item="capabilities">
+                      <button
+                        class="pr-github-visual-trigger"
+                        type="button"
+                        aria-expanded="false"
+                      >
+                        <span class="pr-github-visual-index">04</span>
+                        <span class="pr-github-visual-title">
+                          What is Sico · Capabilities
+                          <small>核心能力架构</small>
+                        </span>
+                        <i aria-hidden="true"></i>
+                      </button>
+                      <div class="pr-github-visual-copy">
+                        <p>
+                          横向流程连接 Employee、Vendor Operator 与 Digital Worker。Cortex、Action、MemorySense 三个能力单元以渐变、图标和方向线形成清晰的数据流，呈现内部能力与外部角色的联动关系。
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </section>
+
+              <section class="pr-update-deck" data-update-deck aria-labelledby="sico-update-deck-title">
+                <header class="pr-update-deck-heading">
+                  <div>
+                    <span class="pr-update-deck-kicker">11 / Product release deck</span>
+                    <h4 id="sico-update-deck-title">
+                      Sico Update · MAX 2.0
+                      <small>产品更新演示 · 2026</small>
+                    </h4>
+                  </div>
+                  <span class="pr-update-deck-meta">08 selected pages · 16:9</span>
+                </header>
+
+                <div class="pr-update-deck-grid">
+                  <figure>
+                    <img src="./assets/cases/login/sico-update-01.png" alt="Sico Update presentation cover" width="1725" height="971" loading="lazy" decoding="async" />
+                  </figure>
+                  <figure>
+                    <img src="./assets/cases/login/sico-update-02.png" alt="MAX 2.0 release overview" width="1725" height="971" loading="lazy" decoding="async" />
+                  </figure>
+                  <figure>
+                    <img src="./assets/cases/login/sico-update-03.png" alt="Data proportion design framework" width="1725" height="971" loading="lazy" decoding="async" />
+                  </figure>
+                  <figure>
+                    <img src="./assets/cases/login/sico-update-04.png" alt="Max 2.0 roadmap phases" width="1725" height="971" loading="lazy" decoding="async" />
+                  </figure>
+                  <figure>
+                    <img src="./assets/cases/login/sico-update-05.png" alt="Max 2.0 roadmap missions and metrics" width="1725" height="971" loading="lazy" decoding="async" />
+                  </figure>
+                  <figure>
+                    <img src="./assets/cases/login/sico-update-06.png" alt="New management paradigm for digital workers" width="1725" height="971" loading="lazy" decoding="async" />
+                  </figure>
+                  <figure>
+                    <img src="./assets/cases/login/sico-update-07.png" alt="Data proportion design allocation" width="1725" height="971" loading="lazy" decoding="async" />
+                  </figure>
+                  <figure>
+                    <img src="./assets/cases/login/sico-update-08.png" alt="Sico update summary" width="1725" height="971" loading="lazy" decoding="async" />
+                  </figure>
+                </div>
+              </section>
+
+              <section class="pr-system-foundations" aria-labelledby="sico-foundations-title" hidden>
+                <header class="pr-foundations-heading">
+                  <div>
+                    <span>UI Foundations</span>
+                    <h4 id="sico-foundations-title">设计规范</h4>
+                  </div>
+                </header>
+
+                <div class="pr-foundation-grid">
+                  <article class="pr-foundation-panel pr-colors-panel">
+                    <header class="pr-foundation-panel-heading">
+                      <span>01 / Color</span>
+                      <h5>颜色系统</h5>
+                      <small>Brand, semantic & neutral</small>
+                    </header>
+
+                    <div class="pr-color-core">
+                      <span style="--swatch: #6e68d9; --swatch-ink: #ffffff">
+                        <i></i><b>Primary</b><small>#6E68D9</small>
+                      </span>
+                      <span style="--swatch: #66c7ee; --swatch-ink: #17313a">
+                        <i></i><b>Accent</b><small>#66C7EE</small>
+                      </span>
+                      <span style="--swatch: #1a1a1a; --swatch-ink: #ffffff">
+                        <i></i><b>Ink</b><small>#1A1A1A</small>
+                      </span>
+                      <span style="--swatch: #ffffff; --swatch-ink: #343432">
+                        <i></i><b>Surface</b><small>#FFFFFF</small>
+                      </span>
+                    </div>
+
+                    <div class="pr-semantic-colors" aria-label="Semantic colors">
+                      <span><i style="--status: #50c995"></i>Success</span>
+                      <span><i style="--status: #e7a85b"></i>Warning</span>
+                      <span><i style="--status: #e3636d"></i>Danger</span>
+                      <span><i style="--status: #6da8ec"></i>Info</span>
+                    </div>
+
+                    <div class="pr-neutral-scale" aria-label="Neutral gray scale">
+                      <span style="--neutral: #fafaf9"><b>50</b></span>
+                      <span style="--neutral: #f1f1ef"><b>100</b></span>
+                      <span style="--neutral: #e6e6e3"><b>200</b></span>
+                      <span style="--neutral: #d7d7d3"><b>300</b></span>
+                      <span style="--neutral: #bab9b4"><b>400</b></span>
+                      <span style="--neutral: #92918c"><b>500</b></span>
+                      <span style="--neutral: #666560"><b>600</b></span>
+                      <span style="--neutral: #3d3d39"><b>700</b></span>
+                      <span style="--neutral: #1a1a1a"><b>900</b></span>
+                    </div>
+                  </article>
+
+                  <article class="pr-foundation-panel pr-type-panel">
+                    <header class="pr-foundation-panel-heading">
+                      <span>02 / Typography</span>
+                      <h5>字体规范</h5>
+                      <small>Editorial hierarchy</small>
+                    </header>
+
+                    <div class="pr-type-specimen">
+                      <span class="pr-type-meta">Heading level 1 · Title 32 Medium</span>
+                      <p>Meaningful conversations, organized around real work.</p>
+                    </div>
+                    <div class="pr-type-scale-list">
+                      <div class="is-heading-1">
+                        <span>Heading 1</span>
+                        <b>My goal is to have meaningful conversations.</b>
+                        <small>32 / Medium</small>
+                      </div>
+                      <div class="is-heading-2">
+                        <span>Heading 2</span>
+                        <b>Organized digital workers.</b>
+                        <small>28 / Medium</small>
+                      </div>
+                      <div class="is-heading-3">
+                        <span>Heading 3</span>
+                        <b>Clarity in every action.</b>
+                        <small>24 / Bold</small>
+                      </div>
+                      <div class="is-subtitle">
+                        <span>Subtitle</span>
+                        <b>Designed for real work.</b>
+                        <small>20 / Medium</small>
+                      </div>
+                      <div class="is-body">
+                        <span>Body</span>
+                        <b>This is body text for product documentation and task detail.</b>
+                        <small>16 / Regular</small>
+                      </div>
+                      <div class="is-meta">
+                        <span>Meta</span>
+                        <b>EXECUTION LOG · UI IMPROVEMENT</b>
+                        <small>12 / Regular</small>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="pr-foundation-panel pr-shape-panel">
+                    <header class="pr-foundation-panel-heading">
+                      <span>03 / Shape & scale</span>
+                      <h5>圆角与尺寸</h5>
+                      <small>Soft controls, consistent rhythm</small>
+                    </header>
+
+                    <div class="pr-radius-scale" aria-label="Radius scale">
+                      <span><i style="--radius: 2px"></i><b>2</b></span>
+                      <span><i style="--radius: 6px"></i><b>6</b></span>
+                      <span><i style="--radius: 10px"></i><b>10</b></span>
+                      <span><i style="--radius: 14px"></i><b>14</b></span>
+                      <span><i style="--radius: 999px"></i><b>Full</b></span>
+                    </div>
+
+                    <div class="pr-space-scale" aria-label="Spacing scale">
+                      <span><b>4</b><i style="--space: 4px"></i></span>
+                      <span><b>8</b><i style="--space: 8px"></i></span>
+                      <span><b>12</b><i style="--space: 12px"></i></span>
+                      <span><b>16</b><i style="--space: 16px"></i></span>
+                      <span><b>24</b><i style="--space: 24px"></i></span>
+                      <span><b>32</b><i style="--space: 32px"></i></span>
+                    </div>
+                  </article>
+
+                  <article class="pr-foundation-panel pr-button-panel">
+                    <header class="pr-foundation-panel-heading">
+                      <span>04 / Actions</span>
+                      <h5>按钮层级</h5>
+                      <small>Primary to quiet actions</small>
+                    </header>
+
+                    <div class="pr-action-demo">
+                      <span class="pr-demo-button is-discard">Discard Changes</span>
+                      <span class="pr-action-group">
+                        <span class="pr-demo-button is-cancel">Cancel</span>
+                        <span class="pr-demo-button is-save">Save</span>
+                      </span>
+                    </div>
+                    <div class="pr-button-sizes">
+                      <span class="is-small">Small</span>
+                      <span>Default</span>
+                      <span class="is-large">Large</span>
+                    </div>
+                    <div class="pr-secondary-actions">
+                      <span>View</span>
+                      <span>Cancel request</span>
+                      <span>Learn more</span>
+                    </div>
+                  </article>
+
+                  <article class="pr-foundation-panel pr-identity-panel">
+                    <header class="pr-foundation-panel-heading">
+                      <span>05 / Identity</span>
+                      <h5>标签、徽标与头像</h5>
+                      <small>Status and ownership</small>
+                    </header>
+
+                    <div class="pr-status-tags">
+                      <span class="is-live"><i></i>Active</span>
+                      <span class="is-draft"><i></i>Inactive</span>
+                      <span class="is-error"><i></i>Rejected</span>
+                      <span class="is-training"><i></i>Onboarding</span>
+                    </div>
+                    <div class="pr-badge-row">
+                      <span class="is-complete">Completed</span>
+                      <span>Not Started</span>
+                      <span class="is-failed">Failed</span>
+                      <span class="is-running">Running</span>
+                    </div>
+                    <div class="pr-avatar-stack" aria-label="Team avatars">
+                      <img src="./assets/target-users/user-a-full.png" alt="" />
+                      <img src="./assets/target-users/user-b-full.png" alt="" />
+                      <img src="./assets/target-users/user-c-full.png" alt="" />
+                      <span>+8</span>
+                    </div>
+                  </article>
+
+                  <article class="pr-foundation-panel pr-card-component-panel">
+                    <header class="pr-foundation-panel-heading">
+                      <span>06 / Card</span>
+                      <h5>卡片组件</h5>
+                      <small>Task overview pattern</small>
+                    </header>
+
+                    <div class="pr-worker-card">
+                      <div class="pr-worker-card-top">
+                        <span>Worker / 03</span>
+                        <b><i></i>Running</b>
+                      </div>
+                      <div class="pr-worker-card-main">
+                        <img src="./assets/target-users/user-a-full.png" alt="" />
+                        <div>
+                          <small>Research & synthesis</small>
+                          <strong>Competitor onboarding</strong>
+                        </div>
+                      </div>
+                      <p>Reviewing workflow patterns across 12 digital worker products.</p>
+                      <div class="pr-worker-card-bottom">
+                        <span>4 steps</span>
+                        <span>90%</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+            </article>
+          </section>
+
+          <section class="pr-sections" data-generic-story hidden>
+            <div class="pr-copilot-overview" data-copilot-overview hidden>
+              <header class="pr-story-heading">
+                <div>
+                  <span class="pr-story-kicker">01 / Context</span>
+                  <h3>
+                    Project Overview
+                    <span>项目介绍</span>
+                  </h3>
+                </div>
+              </header>
+
+              <div class="pr-overview-copy pr-copilot-overview-copy">
+                <p>
+                  Copilot Labs 是 Microsoft AI 的前沿实验平台，连接研究创新、产品设计与真实用户反馈。项目的核心任务是将突破性的 AI 能力转化为清晰、直观且具有探索性的产品体验，并通过快速、负责任的实验验证未来的 Copilot 交互方式。
+                </p>
+                <p class="pr-overview-en">
+                  Copilot Labs is the creative frontier of Microsoft AI, connecting research
+                  breakthroughs, product design, and real-world user feedback. The project transforms
+                  emerging AI capabilities into clear, intuitive, and exploratory experiences, using
+                  rapid and responsible experimentation to shape what comes next for Copilot.
+                </p>
+              </div>
+            </div>
+
+            <div class="pr-copilot-optimization" data-copilot-optimization hidden>
+              <header class="pr-copilot-optimization-heading">
+                <div>
+                  <span class="pr-story-kicker">02 / Experience refinement</span>
+                  <h4>
+                    Visual Studio Code
+                    <small>UI 优化</small>
+                  </h4>
+                </div>
+              </header>
+
+              <div class="pr-compare-list">
+                <article class="pr-compare-item">
+                  <div
+                    class="pr-compare-frame is-copilot-source"
+                    data-compare-slider
+                    style="--compare-position: 50%"
+                    role="group"
+                    aria-label="Before and after comparison of the Copilot Labs home page"
+                  >
+                    <img
+                      class="pr-compare-image pr-compare-after"
+                      src="./assets/cases/copilot-labs-after.png"
+                      alt="After optimization of the Copilot Labs home page"
+                      width="648"
+                      height="624"
+                      loading="lazy"
+                    />
+                    <div class="pr-compare-before-layer" aria-hidden="true">
+                      <img
+                        class="pr-compare-image"
+                        src="./assets/cases/copilot-labs-before.png"
+                        alt=""
+                        width="1468"
+                        height="1101"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span class="pr-compare-label is-before">Before</span>
+                    <span class="pr-compare-label is-after">After</span>
+                    <button
+                      class="pr-compare-handle"
+                      type="button"
+                      role="slider"
+                      aria-label="Before and after comparison position"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="50"
+                    >
+                      <svg viewBox="0 0 30 30" aria-hidden="true">
+                        <path d="m12.6 11.4-3.2 3.6 3.2 3.6M17.4 11.4l3.2 3.6-3.2 3.6" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="pr-compare-caption">
+                    <span>Copilot Labs / Home experience</span>
+                    <div>
+                      <p><b>Before</b> 视觉信息冗杂，信息平均用力，用户找不到重点。</p>
+                      <p><b>After</b> 重心下沉到内容卡片，用角标标记重点项目，拉开留白与层级，让热门和最新项目更容易被识别。</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="pr-copilot-deep-dive" data-copilot-deep-dive hidden>
+              <section class="pr-copilot-chapter pr-copilot-card-story" aria-labelledby="copilot-card-story-title">
+                <header class="pr-copilot-chapter-heading">
+                  <div>
+                    <span class="pr-story-kicker">03 / Lab gallery</span>
+                    <h4 id="copilot-card-story-title">
+                      Experiment Collection
+                      <small>AI Lab 场景化内容卡片</small>
+                    </h4>
+                  </div>
+                </header>
+
+                <figure class="pr-copilot-card-ribbon">
+                  <div class="pr-copilot-card-rail">
+                    <img
+                      src="./assets/cases/copilot/project-cards.png"
+                      alt="Copilot Actions, Muse, Copilot Podcast, Think Deeper and Trellis experimental project cards"
+                      width="2880"
+                      height="685"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <figcaption>
+                    <span>Copilot Labs / Experiment cards</span>
+                    <span>Availability · Product status · Action</span>
+                  </figcaption>
+                </figure>
+              </section>
+
+              <section class="pr-copilot-chapter pr-copilot-data" aria-labelledby="copilot-data-title">
+                <div class="pr-copilot-overview-grid">
+                  <div class="pr-copilot-overview-copy">
+                    <header class="pr-copilot-chapter-heading pr-copilot-overview-heading">
+                      <div>
+                        <span class="pr-story-kicker">04 / Product context</span>
+                        <h4 id="copilot-data-title">
+                          Copilot Data
+                          <small>Project Overview · 项目介绍</small>
+                        </h4>
+                      </div>
+                    </header>
+                    <p>
+                      Copilot Data 是面向 AI Agent 与 Digital Worker 的数据观测与运行洞察平台，
+                      连接分散的 Agent、任务与执行数据。项目的核心任务是将复杂的运行信息转化为清晰、
+                      直观的监控体验，让用户能够快速了解 Agent 的活跃状态、任务执行与运行链路，
+                      并通过统一的数据视角持续优化 Agent 的可靠性与效率。
+                    </p>
+                    <p>
+                      该定位也与内部讨论中强调的 worker type、运行状态、实例、任务与 event timeline
+                      等观测维度一致。
+                    </p>
+                    <p class="pr-overview-en">
+                      Copilot Data is an observability and insights platform for AI agents and
+                      digital workers, connecting fragmented execution data into a unified view.
+                      The project transforms complex runtime signals into clear, intuitive monitoring
+                      experiences, helping users understand agent activity, task execution, and
+                      operational flows while continuously improving reliability and efficiency.
+                    </p>
+                    <div class="pr-copilot-data-tags" aria-label="Copilot Data product focus">
+                      <span>Agent observability</span>
+                      <span>Runtime insight</span>
+                      <span>Task monitoring</span>
+                    </div>
+                  </div>
+
+                  <figure class="pr-copilot-data-visual">
+                    <img
+                      src="./assets/cases/copilot/data-overview-laptop-transparent.png"
+                      alt="Copilot Data running inside Microsoft Copilot with the Ask about Copilot data prompt"
+                      width="1617"
+                      height="996"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </figure>
+                </div>
+              </section>
+
+              <section class="pr-copilot-chapter pr-copilot-vscode" aria-labelledby="copilot-vscode-title">
+                <header class="pr-copilot-chapter-heading">
+                  <div>
+                    <span class="pr-story-kicker">05 / Experience refinement</span>
+                    <h4 id="copilot-vscode-title">
+                      Visual Studio Code
+                      <small>Copilot Data Assistant · UI 优化</small>
+                    </h4>
+                  </div>
+                </header>
+
+                <div class="pr-copilot-study-grid">
+                  <article class="pr-copilot-study-card">
+                    <header class="pr-copilot-pair-heading">
+                      <span>Study 01</span>
+                      <h5>Question entry <small>从信息平铺到对话引导</small></h5>
+                    </header>
+                    <div
+                      class="pr-compare-frame pr-copilot-study-frame"
+                      data-compare-slider
+                      style="--compare-position: 50%"
+                      role="group"
+                      aria-label="Before and after comparison of the Copilot Data question entry"
+                    >
+                      <img
+                        class="pr-compare-image pr-compare-after"
+                        src="./assets/cases/copilot/data-ui-after-1-final.png"
+                        alt="After redesign of the Copilot Data question entry"
+                        width="791"
+                        height="647"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div class="pr-compare-before-layer" aria-hidden="true">
+                        <img
+                          class="pr-compare-image"
+                          src="./assets/cases/copilot/data-ui-before-1-final.png"
+                          alt=""
+                          width="784"
+                          height="641"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <span class="pr-compare-label is-before">Before</span>
+                      <span class="pr-compare-label is-after">After</span>
+                      <button
+                        class="pr-compare-handle"
+                        type="button"
+                        role="slider"
+                        aria-label="Question entry before and after comparison position"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="50"
+                      >
+                        <svg viewBox="0 0 30 30" aria-hidden="true">
+                          <path d="m12.6 11.4-3.2 3.6 3.2 3.6M17.4 11.4l3.2 3.6-3.2 3.6" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="pr-compare-caption">
+                      <span>Question entry / Prompt and answer</span>
+                      <div>
+                        <p>
+                          <b>Before</b>
+                          信息平铺、层级模糊，元素权重一致，缺少引导锚点，模块拥挤，
+                          用户无法快速识别操作顺序，信息查找效率低。
+                        </p>
+                        <p>
+                          <b>After</b>
+                          梳理问答的先后流程，将提问输入区设为核心；增加视觉点位引导交互步骤，
+                          拉开模块留白，主次清晰，降低用户理解成本，浏览与操作更顺畅。
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="pr-copilot-study-card">
+                    <header class="pr-copilot-pair-heading">
+                      <span>Study 02</span>
+                      <h5>Result presentation <small>从冗长输出到重点归档</small></h5>
+                    </header>
+                    <div
+                      class="pr-compare-frame pr-copilot-study-frame"
+                      data-compare-slider
+                      style="--compare-position: 50%"
+                      role="group"
+                      aria-label="Before and after comparison of the Copilot Data result presentation"
+                    >
+                      <img
+                        class="pr-compare-image pr-compare-after"
+                        src="./assets/cases/copilot/data-ui-after-2-final.png"
+                        alt="After redesign of the Copilot Data result presentation"
+                        width="790"
+                        height="618"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div class="pr-compare-before-layer" aria-hidden="true">
+                        <img
+                          class="pr-compare-image"
+                          src="./assets/cases/copilot/data-ui-before-2-final.png"
+                          alt=""
+                          width="701"
+                          height="562"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <span class="pr-compare-label is-before">Before</span>
+                      <span class="pr-compare-label is-after">After</span>
+                      <button
+                        class="pr-compare-handle"
+                        type="button"
+                        role="slider"
+                        aria-label="Result presentation before and after comparison position"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="50"
+                      >
+                        <svg viewBox="0 0 30 30" aria-hidden="true">
+                          <path d="m12.6 11.4-3.2 3.6 3.2 3.6M17.4 11.4l3.2 3.6-3.2 3.6" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="pr-compare-caption">
+                      <span>Result presentation / Analysis and summary</span>
+                      <div>
+                        <p>
+                          <b>Before</b>
+                          视觉元素冗余，信息权重均等，缺少重点标识，用户难以快速定位核心项目。
+                        </p>
+                        <p>
+                          <b>After</b>
+                          重心聚焦卡片，角标标记重点项目，优化留白与层级，
+                          快速识别热门与新版项目，提升浏览效率。
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <section class="pr-copilot-chapter pr-copilot-advisor" aria-labelledby="copilot-advisor-title">
+                <header class="pr-copilot-chapter-heading">
+                  <div>
+                    <span class="pr-story-kicker">06 / 对话设计</span>
+                    <h4 id="copilot-advisor-title">
+                      Copilot Advisor
+                      <small>产品介绍</small>
+                    </h4>
+                  </div>
+                </header>
+
+                <figure class="pr-copilot-advisor-cast">
+                  <img
+                    src="./assets/cases/copilot/advisor-cast.png"
+                    alt="A cast of Copilot Advisor characters around a shared conversation"
+                    width="2540"
+                    height="840"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+
+                <div class="pr-copilot-advisor-copy">
+                  <p>
+                    Copilot Advisor 是一款 AI 智能顾问，通过理解用户的目标与上下文，
+                    提供个性化建议、洞察和下一步行动，帮助用户更高效地完成任务和做出决策。
+                  </p>
+                </div>
+
+                <figure class="pr-copilot-advisor-screen">
+                  <img
+                    src="./assets/cases/copilot/advisor-screens-final.png"
+                    alt="Copilot Advisor team concept and its placement within Copilot Labs"
+                    width="1367"
+                    height="846"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+
+                <header class="pr-copilot-chapter-heading pr-copilot-analysis-heading">
+                  <div>
+                    <span class="pr-story-kicker">双界面解析</span>
+                    <div class="pr-copilot-analysis-title">
+                      <h4 id="copilot-system-title">品牌与设计系统统一</h4>
+                    </div>
+                  </div>
+                  <p>
+                    两张界面沿用同一套 Copilot / Fluent 视觉语言：左侧用圆桌会议承载多人顾问协作，
+                    右侧将同一场景收敛为 Labs 入口卡片。导航、圆角、卡片层级与操作按钮保持一致，
+                    让概念体验能够自然衔接至真实产品入口。
+                  </p>
+                </header>
+
+                <div class="pr-copilot-principles">
+                  <article>
+                    <span>01</span>
+                    <h5>场景叙事</h5>
+                    <p>
+                      左图用“圆桌会议”场景把多名 AI 顾问的协同过程具象化，
+                      让抽象的多智能体能力更容易被理解。
+                    </p>
+                  </article>
+                  <article>
+                    <span>02</span>
+                    <h5>功能分区</h5>
+                    <p>
+                      左侧固定导航，中间主区承载核心场景；下方用三张场景卡区分
+                      Freestyle Talk、The Round Table 与 The Rabbit Hole，让模式切换更清晰。
+                    </p>
+                  </article>
+                  <article>
+                    <span>03</span>
+                    <h5>轻量容器</h5>
+                    <p>
+                      内容以低对比度浅白卡片承载，减少装饰和边框，
+                      让视觉重心落在场景图、角色与功能入口上。
+                    </p>
+                  </article>
+                  <article>
+                    <span>04</span>
+                    <h5>一致栅格</h5>
+                    <p>
+                      右图沿用“侧边导航 + 主内容”的经典栅格，把同一套场景卡片收敛为 Labs 入口，
+                      使概念界面与真实产品结构保持一致。
+                    </p>
+                  </article>
+                </div>
+
+                <div class="pr-copilot-ui-analysis">
+                  <article class="pr-copilot-ui-analysis-row" aria-labelledby="ui-analysis-hierarchy">
+                    <figure>
+                      <img
+                        src="./assets/cases/copilot/ui-analysis-structured.png"
+                        alt="Copilot Advisor 对两位顾问观点进行左右分区和结构化呈现"
+                        width="922"
+                        height="644"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </figure>
+                    <div class="pr-copilot-ui-analysis-notes">
+                      <h5 id="ui-analysis-hierarchy">左右信息解耦</h5>
+                      <ol>
+                        <li>
+                          <b>信息层级结构化：</b>
+                          把 AI 输出内容拆成模块：业务要点、风险、最终结论，用项目符号和脚注突出重点信息，
+                          长文本不会杂乱；区分标题、正文与重点标注，建立清晰阅读流。
+                        </li>
+                        <li>
+                          <b>角色锚点设计：</b>
+                          底部横向头像轮播，直观展示当前参与对话的顾问角色，用户可以随时感知
+                          “哪些 AI 在参与本次决策”，强化多顾问产品特色。
+                        </li>
+                        <li>
+                          <b>留白与分组：</b>
+                          内容块之间留白充足，不同主题信息自然分组，避免大段文字堆砌带来的阅读疲劳，
+                          适合阅读偏专业的商业分析内容。
+                        </li>
+                        <li>
+                          <b>控件轻量化：</b>
+                          头像切换器样式简约，不抢夺 AI 结论内容的视觉权重。
+                        </li>
+                      </ol>
+                    </div>
+                  </article>
+
+                  <article class="pr-copilot-ui-analysis-row" aria-labelledby="ui-analysis-reading">
+                    <figure>
+                      <img
+                        src="./assets/cases/copilot/ui-analysis-readable.png"
+                        alt="Copilot Advisor 将顾问头像与可滚动的分析结论并排展示"
+                        width="922"
+                        height="645"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </figure>
+                    <div class="pr-copilot-ui-analysis-notes">
+                      <h5 id="ui-analysis-reading">文本适配</h5>
+                      <p>右侧说明文本分段，控制行宽，保障长文本阅读舒适度。</p>
+                    </div>
+                  </article>
+                </div>
+
+                <figure class="pr-copilot-work-showcase">
+                  <div class="pr-copilot-work-showcase-type">
+                    <header class="pr-copilot-work-showcase-intro">
+                      <h5>封面视觉的统一与提效</h5>
+                      <p>
+                        规范视觉风格，并使用 AI 工具根绝主题更换对应封面极大缩短制作时间。
+                      </p>
+                    </header>
+                    <span
+                      class="pr-copilot-work-showcase-title-mask"
+                      aria-hidden="true"
+                    ></span>
+                  </div>
+                  <img
+                    src="./assets/cases/copilot/copilot-work-showcase-web.png"
+                    alt="Copilot 封面视觉、海报设计和线下物料展示"
+                    width="1605"
+                    height="3600"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              </section>
+            </div>
+
+            <div class="pr-section" data-generic-challenge>
+              <h4>The Challenge</h4>
+              <p data-field="lede"></p>
+            </div>
+            <div class="pr-section" data-generic-approach>
+              <h4>Design Approach</h4>
+              <p data-field="notes"></p>
+            </div>
+            <figure class="pr-xiaohongshu-account" data-xiaohongshu-account hidden>
+              <img
+                src="./assets/cases/2026/xiaohongshu-34-handmade.png"
+                alt="小红书账号《34手作》的账号介绍与数据分析"
+                width="2880"
+                height="3437"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="pr-warmchat-overview" data-warmchat-overview hidden>
+              <img
+                src="./assets/cases/2026/warmchat-midautumn-01.jpg"
+                alt="暖聊中秋灯火共婵娟活动设计与形象设计"
+                width="2400"
+                height="9147"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="pr-warmchat-overview-detail"
+                src="./assets/cases/2026/warmchat-midautumn-02.jpg"
+                alt="暖聊中秋主会场视觉与活动交互设计"
+                width="2400"
+                height="14185"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="pr-warmchat-overview-detail"
+                src="./assets/cases/2026/warmchat-dragonboat.jpg"
+                alt="暖聊端午赛龙舟活动视觉与界面设计"
+                width="2400"
+                height="10623"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="pr-warmchat-overview-detail"
+                src="./assets/cases/2026/warmchat-saka.jpg"
+                alt="暖聊海外产品 SAKA 活动视觉与礼物设计"
+                width="2400"
+                height="25025"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="pr-future-overview" data-future-overview hidden>
+              <img
+                src="./assets/cases/2026/tal-ai-tools-training-hd.png"
+                alt="好未来 AI 工具训练与 3D 人物视觉设计全流程"
+                width="2880"
+                height="12809"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="pr-zuoyebang-overview" data-zuoyebang-overview hidden>
+              <img
+                src="./assets/cases/zuoyebang/zuoyebang-operations-2026.jpg"
+                alt="作业帮 K12 插画展示、运营插画与元素设计"
+                width="2880"
+                height="25587"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </section>
+
+        </main>
+      </div>
+
+      <button
+        class="pr-side-btn pr-prev"
+        type="button"
+        data-viewer-direction="-1"
+        aria-label="Previous project"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="5" y="5" width="2.5" height="14" rx=".5" />
+          <path d="m20 5-11 7 11 7Z" />
+        </svg>
+      </button>
+      <button
+        class="pr-side-btn pr-next"
+        type="button"
+        data-viewer-direction="1"
+        aria-label="Next project"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m4 5 11 7-11 7Z" />
+          <rect x="16.5" y="5" width="2.5" height="14" rx=".5" />
+        </svg>
+      </button>
+    </dialog>
+  </body>
+</html>
