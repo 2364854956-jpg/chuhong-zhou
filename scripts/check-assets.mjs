@@ -13,6 +13,7 @@ const localPath = (fromFile, reference) => {
     cleaned.startsWith("#") ||
     cleaned.startsWith("data:") ||
     cleaned.startsWith("mailto:") ||
+    cleaned.startsWith("tel:") ||
     cleaned.startsWith("http:") ||
     cleaned.startsWith("https:")
   ) {

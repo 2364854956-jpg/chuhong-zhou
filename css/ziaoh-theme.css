@@ -1470,6 +1470,53 @@ main {
   font-size: inherit;
 }
 
+.about-contact {
+  display: grid;
+  gap: 4px;
+  width: min(100%, 440px);
+  margin: 26px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid #ececec;
+}
+
+.about-contact > div {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 16px;
+  align-items: baseline;
+}
+
+.about-contact dt,
+.about-contact dd {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.about-contact dt {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.about-contact dd {
+  color: #666666;
+}
+
+.about-contact dd a {
+  color: inherit;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+.about-contact dd a:hover {
+  color: #111111;
+  text-decoration-color: currentColor;
+}
+
 .about-view:not([hidden]),
 .lounge-view:not([hidden]) {
   animation: none;
@@ -5677,6 +5724,16 @@ body.soundroom-on .intro h1 span {
     min-width: 0;
     padding-inline: 10px;
     white-space: nowrap;
+  }
+
+  .about-contact > div {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .about-contact dt,
+  .about-contact dd {
+    font-size: 13px;
   }
 }
 
