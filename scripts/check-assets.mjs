@@ -41,13 +41,13 @@ const checkReference = async (sourceFile, reference) => {
 
 const indexFile = resolve(root, "index.html");
 const indexHtml = await readFile(indexFile, "utf8");
-for (const match of indexHtml.matchAll(/\b(?:src|href)="([^"]+)"/g)) {
+for (const match of indexHtml.matchAll(/\b(?:src|srcset|href)="([^"]+)"/g)) {
   await checkReference(indexFile, match[1]);
 }
 
 const mobileFile = resolve(root, "mobile-preview.html");
 const mobileHtml = await readFile(mobileFile, "utf8");
-for (const match of mobileHtml.matchAll(/\b(?:src|href)="([^"]+)"/g)) {
+for (const match of mobileHtml.matchAll(/\b(?:src|srcset|href)="([^"]+)"/g)) {
   await checkReference(mobileFile, match[1]);
 }
 

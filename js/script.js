@@ -710,6 +710,28 @@ const initSicoGlobe = () => {
   window.requestAnimationFrame(animateGlobe);
 };
 
+const loadedScripts = new Map();
+const loadScriptOnce = (src) => {
+  if (loadedScripts.has(src)) return loadedScripts.get(src);
+
+  const promise = new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.defer = true;
+    script.onload = resolve;
+    script.onerror = () => reject(new Error(`Unable to load ${src}`));
+    document.head.append(script);
+  });
+  loadedScripts.set(src, promise);
+  return promise;
+};
+
+const loadSicoVendors = () =>
+  Promise.all([
+    loadScriptOnce("./assets/vendor/three.min.js?v=20261125-performance-105"),
+    loadScriptOnce("./assets/vendor/earth-texture.js?v=20261125-performance-105"),
+  ]);
+
 const openProject = (key, options = {}) => {
   renderProject(key);
   if (!dialog.open) {
@@ -719,9 +741,19 @@ const openProject = (key, options = {}) => {
   }
   prMain.scrollTo({ top: 0, behavior: "instant" });
   if (key === "sico") {
-    window.requestAnimationFrame(() => {
-      initSicoGlobe();
-    });
+    loadScriptOnce(
+      "./assets/vendor/macbook-island.js?v=20261125-performance-105",
+    ).catch(() => {});
+    loadSicoVendors()
+      .then(() => {
+        window.requestAnimationFrame(() => {
+          initSicoGlobe();
+        });
+      })
+      .catch(() => {
+        const fallback = sicoGlobeViewport?.querySelector("[data-globe-fallback]");
+        if (fallback) fallback.hidden = false;
+      });
   }
   history.replaceState(null, "", `#case-${key}`);
   window.setTimeout(() => dialogShell.focus({ preventScroll: true }), 30);
