@@ -494,8 +494,8 @@ const initSicoGlobe = () => {
   cloudImage.onload = handleTextureLoad;
   dayImage.onerror = handleTextureError;
   cloudImage.onerror = handleTextureError;
-  dayImage.src = window.SICO_EARTH_DAY;
-  cloudImage.src = window.SICO_EARTH_CLOUDS;
+  dayImage.src = "./assets/cases/earth-day.avif";
+  cloudImage.src = "./assets/cases/earth-clouds.avif";
 
   globePivot.rotation.set(0.04, 0, 0);
 
@@ -727,10 +727,53 @@ const loadScriptOnce = (src) => {
 };
 
 const loadSicoVendors = () =>
+  loadScriptOnce("./assets/vendor/three.min.js?v=20261125-globe-first-108");
+
+const loadImage = (src) =>
+  new Promise((resolve) => {
+    const image = new Image();
+    image.onload = resolve;
+    image.onerror = resolve;
+    image.src = src;
+  });
+
+const preloadSicoGlobe = () =>
   Promise.all([
-    loadScriptOnce("./assets/vendor/three.min.js?v=20261125-macbook-mobile-proportion-106"),
-    loadScriptOnce("./assets/vendor/earth-texture.js?v=20261125-macbook-mobile-proportion-106"),
+    loadSicoVendors(),
+    loadImage("./assets/cases/earth-reference.avif"),
+    loadImage("./assets/cases/earth-day.avif"),
+    loadImage("./assets/cases/earth-clouds.avif"),
   ]);
+
+let sicoMacbookObserver;
+const loadSicoMacbook = () => {
+  sicoMacbookObserver?.disconnect();
+  loadScriptOnce(
+    "./assets/vendor/macbook-island.js?v=20261125-globe-first-108",
+  ).catch(() => {});
+};
+
+const observeSicoMacbook = () => {
+  const loginSection = document.querySelector(".pr-login-showcase");
+  if (!loginSection) return;
+  if (!("IntersectionObserver" in window)) {
+    loadSicoMacbook();
+    return;
+  }
+  sicoMacbookObserver ??= new IntersectionObserver(
+    (entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) loadSicoMacbook();
+    },
+    {
+      root: window.matchMedia("(max-width: 820px)").matches
+        ? dialogShell
+        : prMain,
+      rootMargin: "320px 0px",
+      threshold: 0.01,
+    },
+  );
+  sicoMacbookObserver.observe(loginSection);
+};
 
 const openProject = (key, options = {}) => {
   renderProject(key);
@@ -741,10 +784,7 @@ const openProject = (key, options = {}) => {
   }
   prMain.scrollTo({ top: 0, behavior: "instant" });
   if (key === "sico") {
-    loadScriptOnce(
-      "./assets/vendor/macbook-island.js?v=20261125-macbook-mobile-proportion-106",
-    ).catch(() => {});
-    loadSicoVendors()
+    preloadSicoGlobe()
       .then(() => {
         window.requestAnimationFrame(() => {
           initSicoGlobe();
@@ -754,10 +794,21 @@ const openProject = (key, options = {}) => {
         const fallback = sicoGlobeViewport?.querySelector("[data-globe-fallback]");
         if (fallback) fallback.hidden = false;
       });
+    observeSicoMacbook();
   }
   history.replaceState(null, "", `#case-${key}`);
   window.setTimeout(() => dialogShell.focus({ preventScroll: true }), 30);
 };
+
+const sicoCaseTrigger = document.querySelector('[data-case="sico"]');
+if (sicoCaseTrigger) {
+  const warmSico = () => {
+    preloadSicoGlobe().catch(() => {});
+  };
+  sicoCaseTrigger.addEventListener("pointerenter", warmSico, { once: true });
+  sicoCaseTrigger.addEventListener("focus", warmSico, { once: true });
+  sicoCaseTrigger.addEventListener("pointerdown", warmSico, { once: true });
+}
 
 if (questionStack && questionBubbles.length) {
   questionStack.classList.add("is-scroll-reveal");
@@ -1562,8 +1613,6 @@ const menuAnswers = {
     "Clear thinking, honest collaboration, and a healthy respect for both the system and the small human moment inside it.",
   care:
     "I care about hierarchy, emotional clarity, and the feeling of momentum. Good work should make the next action feel obvious.",
-  inspire:
-    "Childhood picture books, record sleeves, quiet interfaces, playful typography, and the way light changes a room.",
 };
 const loungeQuestions = document.querySelector(".menu-questions");
 const loungeAnswer = document.querySelector(".menu-answer");
