@@ -11,7 +11,7 @@ if (rootElement && caseDialog) {
   const stylesheet = document.createElement("link");
   stylesheet.rel = "stylesheet";
   stylesheet.href = new URL(
-    "./assets/vendor/macbook-island.css?v=20261124-macbook-smooth-54",
+    "./assets/vendor/macbook-island.css?v=20261125-macbook-mobile-proportion-106",
     document.baseURI,
   ).href;
   shadowRoot.append(stylesheet);

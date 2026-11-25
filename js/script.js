@@ -728,8 +728,8 @@ const loadScriptOnce = (src) => {
 
 const loadSicoVendors = () =>
   Promise.all([
-    loadScriptOnce("./assets/vendor/three.min.js?v=20261125-performance-105"),
-    loadScriptOnce("./assets/vendor/earth-texture.js?v=20261125-performance-105"),
+    loadScriptOnce("./assets/vendor/three.min.js?v=20261125-macbook-mobile-proportion-106"),
+    loadScriptOnce("./assets/vendor/earth-texture.js?v=20261125-macbook-mobile-proportion-106"),
   ]);
 
 const openProject = (key, options = {}) => {
@@ -742,7 +742,7 @@ const openProject = (key, options = {}) => {
   prMain.scrollTo({ top: 0, behavior: "instant" });
   if (key === "sico") {
     loadScriptOnce(
-      "./assets/vendor/macbook-island.js?v=20261125-performance-105",
+      "./assets/vendor/macbook-island.js?v=20261125-macbook-mobile-proportion-106",
     ).catch(() => {});
     loadSicoVendors()
       .then(() => {
