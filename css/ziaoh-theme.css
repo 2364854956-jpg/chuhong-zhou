@@ -3885,11 +3885,32 @@ body.soundroom-on .intro h1 span {
   }
 
   .pr-question-bubble:nth-child(odd) {
+    left: 0;
     justify-self: start;
   }
 
   .pr-question-bubble:nth-child(even) {
     justify-self: end;
+  }
+
+  .pr-drawback-action::before {
+    width: 0;
+    height: 0;
+    border-top: 5px solid #8a8a85;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    background: transparent;
+    transform: translate(-50%, -32%);
+  }
+
+  .pr-drawback-action::after {
+    display: none;
+  }
+
+  .pr-drawback-item:hover .pr-drawback-action::before,
+  .pr-drawback-item:has(.pr-drawback-toggle:focus-visible) .pr-drawback-action::before,
+  .pr-drawback-item.is-open .pr-drawback-action::before {
+    transform: translate(-50%, -50%) rotate(180deg);
   }
 }
 
