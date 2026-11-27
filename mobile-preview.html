@@ -114,11 +114,70 @@
       <p class="preview-meta">Mobile Preview · 390 × 844</p>
       <div class="phone-frame">
         <iframe
-          src="https://2364854956-jpg.github.io/chuhong-zhou/"
+          src="./index.html#work"
           title="Chuhong Zhou portfolio mobile preview"
           loading="eager"
         ></iframe>
       </div>
     </main>
+    <script>
+      const frame = document.querySelector(".phone-frame iframe");
+      const watchedFiles = [
+        "./index.html",
+        "./css/styles.css",
+        "./css/ziaoh-theme.css",
+        "./js/script.js",
+      ];
+      let sourceStamp = "";
+
+      const syncPreviewState = () => {
+        try {
+          const previewDocument = frame.contentDocument;
+          const soundroomButton = previewDocument?.querySelector(
+            '[data-mode="soundroom"]',
+          );
+          const workSection = previewDocument?.querySelector("#work");
+
+          if (soundroomButton && !previewDocument.body.classList.contains("soundroom-on")) {
+            soundroomButton.click();
+          }
+          workSection?.scrollIntoView({ block: "start" });
+        } catch {
+          // The next load event retries after the local page is available.
+        }
+      };
+
+      const readSourceStamp = async () => {
+        const entries = await Promise.all(
+          watchedFiles.map(async (file) => {
+            const response = await fetch(
+              `${file}?preview-check=${Date.now()}-${Math.random()}`,
+              { method: "HEAD", cache: "no-store" },
+            );
+            return `${file}:${response.headers.get("last-modified") ?? response.status}`;
+          }),
+        );
+        return entries.join("|");
+      };
+
+      frame.addEventListener("load", () => {
+        window.setTimeout(syncPreviewState, 120);
+      });
+
+      const watchSource = async () => {
+        try {
+          const nextStamp = await readSourceStamp();
+          if (sourceStamp && nextStamp !== sourceStamp) {
+            frame.src = `./index.html?preview=${Date.now()}#work`;
+          }
+          sourceStamp = nextStamp;
+        } catch {
+          // Keep the current preview visible if a transient local request fails.
+        }
+      };
+
+      watchSource();
+      window.setInterval(watchSource, 1000);
+    </script>
   </body>
 </html>

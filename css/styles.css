@@ -756,8 +756,7 @@ body.soundroom-on .mode-button.is-active {
   background: rgba(255, 255, 255, 0.11);
 }
 
-body.soundroom-on .track-card::before,
-body.soundroom-on .track-card:hover::before {
+body.soundroom-on .track-card.is-active::before {
   opacity: 0.95;
   transform: scale(1.04);
   filter: blur(0);

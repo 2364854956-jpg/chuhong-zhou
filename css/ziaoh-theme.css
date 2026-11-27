@@ -1662,9 +1662,7 @@ body.soundroom-on .track-card::before {
   mix-blend-mode: screen;
 }
 
-body.soundroom-on .track-card:hover::before,
-body.soundroom-on .track-card:focus-visible::before,
-body.soundroom-on .track-card.in-view::before {
+body.soundroom-on .track-card.is-active::before {
   filter: blur(0);
   opacity: 0.95;
   transform: scale(1.04);
@@ -2106,10 +2104,50 @@ body.soundroom-on .footer-links a:hover {
 
   body.soundroom-on .track-card::after {
     display: block;
+    z-index: 0;
+    top: calc(87.75cqw - 2px);
     right: -12px;
-    bottom: 75px;
+    bottom: auto;
     left: -12px;
     height: 14px;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(24, 12, 6, 0.58) 0,
+        rgba(35, 17, 8, 0.3) 3px,
+        rgba(31, 14, 6, 0.1) 7px,
+        transparent 12px
+      ),
+      radial-gradient(
+        ellipse at 50% -24%,
+        rgba(21, 10, 4, 0.34) 0,
+        rgba(21, 10, 4, 0.14) 38%,
+        transparent 72%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(47, 25, 12, 0.12),
+        transparent 24%,
+        rgba(255, 190, 130, 0.06) 72%,
+        rgba(47, 25, 12, 0.16)
+      ),
+      url("../assets/theme/wood.jpg") center / cover no-repeat,
+      #5c3820;
+    box-shadow:
+      0 3px 5px rgba(27, 12, 5, 0.38),
+      0 9px 16px rgba(0, 0, 0, 0.24),
+      inset 0 3px 5px rgba(17, 8, 3, 0.32),
+      inset 0 1px 0 rgba(255, 200, 148, 0.1),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.45);
+  }
+
+  body.soundroom-on .track-card::before,
+  body.soundroom-on .track-card.is-active::before {
+    display: none;
+  }
+
+  body.soundroom-on .track-card {
+    container-type: inline-size;
   }
 
   body.soundroom-on .track-copy {
