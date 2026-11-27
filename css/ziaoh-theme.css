@@ -9682,3 +9682,40 @@ body.soundroom-on .intro h1 span {
     transition: none;
   }
 }
+
+@media (max-width: 520px) {
+  .track-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 12px;
+  }
+
+  .track-grid .track-card:nth-child(4),
+  .track-grid .track-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .track-copy {
+    padding-top: 10px;
+  }
+
+  .track-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+
+  .track-title strong {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  .track-tags {
+    gap: 4px;
+    margin-top: 7px;
+  }
+
+  .track-tags > span {
+    padding: 3px 7px;
+    font-size: 9px;
+  }
+}
