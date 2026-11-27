@@ -205,6 +205,9 @@ const renderProject = (key) => {
   const project = projects[key];
   if (!project) return;
   activeProject = key;
+  trackCards.forEach((card) => {
+    card.classList.toggle("is-active", card.dataset.case === key);
+  });
   sicoStory.hidden = key !== "sico";
   genericStory.hidden = key === "sico";
   heroSection.hidden =

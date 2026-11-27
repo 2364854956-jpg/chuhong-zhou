@@ -1436,11 +1436,16 @@ main {
 }
 
 .track-card:hover .track-tags > span,
-.track-card:focus-visible .track-tags > span,
-.track-card.in-view .track-tags > span {
+.track-card:focus-visible .track-tags > span {
   border-color: #bdbdbd;
   color: #ffffff;
   background: #bdbdbd;
+}
+
+.track-card.is-active .track-tags > span {
+  border-color: #1a1a1a;
+  color: #ffffff;
+  background: #1a1a1a;
 }
 
 .site-footer {
@@ -1740,11 +1745,16 @@ body.soundroom-on .track-tags > span {
 }
 
 body.soundroom-on .track-card:hover .track-tags > span,
-body.soundroom-on .track-card:focus-visible .track-tags > span,
-body.soundroom-on .track-card.in-view .track-tags > span {
+body.soundroom-on .track-card:focus-visible .track-tags > span {
   border-color: transparent;
   color: #efe6d5;
   background: rgba(60, 46, 36, 0.7);
+}
+
+body.soundroom-on .track-card.is-active .track-tags > span {
+  border-color: transparent;
+  color: #3a241c;
+  background: #f5ece0;
 }
 
 body.soundroom-on .about-bio p {
